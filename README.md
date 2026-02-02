@@ -13,6 +13,40 @@ Buat dulu SG yang sesuai, ijinkan inbound rule port 22 dan 80 dari anywhere-IPv4
 
 ### A. Buat RDS
 
+Buka RDS and Aurora
+
+Klik Create Database
+
+
+Choose a database creation method : Full Configuration
+Engine type : MySQL
+
+Templates : Sandbox
+
+Availability and durability : otomatis terpilih Single-AZ DB instance deployment (1 instance)
+
+
+DB instance identifier : database-1
+
+Master username : (admin) boleh diganti
+
+Credentials management : Self managed
+
+Master password : (P4ssw0rd) boleh diganti
+Confirm master password : (P4ssw0rd) boleh diganti
+
+
+Public access : No, kalau butuh diakses dari luar buat jadi Yes
+
+
+VPC security group (firewall) : Choose existing, pilih yang ijinkan inbound 3306
+
+Klik Create Database
+
+Status
+Creating
+
+
 ### B. Membuat Instance EC2
 
 1. Login ke AWS Academy Learner Lab.
@@ -25,7 +59,7 @@ Buat dulu SG yang sesuai, ijinkan inbound rule port 22 dan 80 dari anywhere-IPv4
    - Pastikan ubah IAM Role menjadi LabInstanceProfile dari menu Action > Security > Modify IAM Role
 3. Hubungkan ke instance via SSH.
 
-### B. Membuat dan Konfigurasi S3 Bucket
+### C. Membuat dan Konfigurasi S3 Bucket
 S3 Bucket dapat dibuat dengan Web GUO Management Console seperti biasa, atau jalankan perintah ini melalui terminal (setelah konfigurasi AWS CLI), atau AWS Clodshell untuk membuat bucket bernama `nugwebphps3`:
 
 
