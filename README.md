@@ -94,6 +94,9 @@ sudo rm /var/www/html/index.html
 
 ## Langkah 2: Deploy Aplikasi
 ```
+
+cd ~
+
 git clone https://github.com/paknux/php-mysql-s3.git
 
 cd php-mysql-s3
