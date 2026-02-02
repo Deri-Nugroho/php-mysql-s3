@@ -91,6 +91,29 @@ sudo chmod -R 777 /var/www/html
 sudo rm /var/www/html/index.html
 ```
 
+# Install Composer secara global
+sudo apt install php-myadmin
+```
 
 ## Langkah 2: Deploy Aplikasi
-Di dalam direktori /var/www/html buat file config.php dan index.php, sesuaikan dengan nama bucket S3
+git clone https://github.com/paknux/php-mysql-s3.git
+
+cd php-mysql-s3
+cp * /var/www/html
+```
+
+
+## Langkah 2: Deploy Aplikasi
+edit file config.php
+
+sesuaikan 
+
+$db_host = ''; // ISI DENGAN ENDPOINT RDS ANDA
+$db_user = 'admin';      
+$db_pass = 'P4ssw0rd';   
+
+
+```
+
+
+

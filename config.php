@@ -12,7 +12,8 @@ $s3 = new S3Client([
 ]);
 
 // --- 2. KONFIGURASI DATABASE ---
-$db_host = 'database-2.ccqnofwkwmzs.us-east-1.rds.amazonaws.com';
+//$db_host = 'database-2.ccqnofwkwmzs.us-east-1.rds.amazonaws.com';
+$db_host = ''; // ISI DENGAN ENDPOINT RDS ANDA
 $db_user = 'admin';      
 $db_pass = 'P4ssw0rd';          
 $db_name = 'db1'; 

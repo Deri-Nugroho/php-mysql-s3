@@ -1,6 +1,7 @@
 <?php
 // Pengaturan Koneksi RDS
-$host = "database-2.ccqnofwkwmzs.us-east-1.rds.amazonaws.com";
+//$host = "database-2.ccqnofwkwmzs.us-east-1.rds.amazonaws.com";
+$host = ""; // ISI DENGAN ENDPOINT RDS ANDA
 $user = "admin";
 $pass = "P4ssw0rd";
 $db_name = "smk_cloud_db"; 
