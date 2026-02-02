@@ -92,10 +92,12 @@ sudo rm /var/www/html/index.html
 ```
 
 # Install Composer secara global
+```
 sudo apt install php-myadmin
 ```
 
 ## Langkah 2: Deploy Aplikasi
+```
 git clone https://github.com/paknux/php-mysql-s3.git
 
 cd php-mysql-s3
@@ -103,9 +105,8 @@ cp * /var/www/html
 ```
 
 
-## Langkah 2: Deploy Aplikasi
+## Sesuikan config.php
 ```
-
 edit file config.php
 
 sesuaikan 
