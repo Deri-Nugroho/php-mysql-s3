@@ -1,6 +1,6 @@
 <?php
 
-include 'config.php'; 
+include 'config.php';  
 
 // Pengaturan Koneksi RDS
 //$host = "database-2.ccqnofwkwmzs.us-east-1.rds.amazonaws.com";
