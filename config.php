@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 
 // --- 1. KONFIGURASI S3 (IAM ROLE) ---
-$bucket = 'nugwebphps3'; 
+$bucket = 'nugwebphps3'; // GANTI DENGAN NAMA BUCKET ANDA
 $region = 'us-east-1'; 
 
 $s3 = new S3Client([
@@ -13,9 +13,9 @@ $s3 = new S3Client([
 
 // --- 2. KONFIGURASI DATABASE ---
 //$db_host = 'database-2.ccqnofwkwmzs.us-east-1.rds.amazonaws.com';
-$db_host = ''; // ISI DENGAN ENDPOINT RDS ANDA
-$db_user = 'admin';      
-$db_pass = 'P4ssw0rd';          
+$db_host = '';           // ISI DENGAN ENDPOINT RDS ANDA
+$db_user = 'admin';      // GANTI DENGAN USER RDS ANDA
+$db_pass = 'P4ssw0rd';   // GANTI DENGAN PASSWORD RDS ANDA
 $db_name = 'db1'; 
 
 // Koneksi awal ke MySQL
